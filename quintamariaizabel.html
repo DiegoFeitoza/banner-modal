@@ -1,0 +1,728 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Quinta Maria Izabel</title>
+
+
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+	<style type="text/css">
+		@font-face {
+			font-family: trajanpro;
+			src: url(src/font/trajanpro_regular.otf);
+			font-weight: normal;
+		}
+
+		@font-face {
+			font-family: helveticabold;
+			src: url(src/font/helvetica_bold.otf);
+			font-weight: bold;
+		}
+
+		@font-face {
+			font-family: helvetica;
+			src: url(src/font/helvetica_regular.otf);
+			font-weight: normal;
+		}
+
+		.trajan{
+			font-family: trajanpro !important;
+		}
+
+		.titulos-vinhos{
+			font-family: trajanpro !important;
+			color: #eca45c;
+			font-size: 15px;		
+		}
+
+		.helvetica{
+			font-family: helvetica !important;
+		}
+
+		.helveticab{
+			font-family: helveticabold !important;
+		}
+
+		#total-rich-media{
+			position: relative;
+			width: 800px;
+			height: 508px;
+			margin: 0 auto;
+			display: block;
+		}
+
+		.carousel-indicators{
+			background: black;
+		}
+
+		ul#menu-carousel{
+			background: #551724;
+			height: 42px;
+			line-height: 42px;
+			padding: 0 5px 0 12px; 
+			position: absolute;
+			z-index: 9999;
+			margin: 15px auto;
+			width: 100%;
+			font-size: 14px;
+		}
+
+		ul#menu-carousel li {
+			display: inline-block;
+			color: white;
+			padding: 0 2px;
+			text-transform: uppercase;
+		}
+
+		ul#menu-carousel li a{
+			text-decoration: none;
+			color: white;
+			transition: all 0.3s;
+			-webkit-transition:  all 0.3s;
+		}
+
+		ul#menu-carousel li a:visited{
+			color: white;
+		}
+
+		ul#menu-carousel li a:hover{
+			opacity: 0.6;
+		}
+
+		/*Itens */
+		#item0-qmi, #item10-qmi{
+			background: url('src/img/bgCapa.jpg');
+			height: 508px;
+			width: 800px;
+		}
+
+		#item1-qmi, #item2-qmi, #item3-qmi, #item4-qmi, #item5-qmi, #item6-qmi, #item7-qmi, #item8-qmi, #item9-qmi{
+			background: url('src/img/bgVinhos.jpg');
+			height: 508px;
+			width: 800px;
+		}
+
+		#imagem-vinhos{
+			margin-top: 10px;
+		}
+
+		#textos-abertura{
+
+		}
+
+		#textos-abertura {
+			padding-top: 100px;
+			padding-left: 15px;
+		}
+
+		div#btn-comprar a {
+			background: white;
+			border-radius: 30px;
+			position: absolute;
+			bottom: 25px;
+			height: 35px;
+			width: 405px;
+			color: #7a2738;
+			left: 20px;
+			box-shadow: 3px 3px 3px rgba(0,0,0,0.55);
+			font-size: 1.1em;
+		}
+
+		#logo-abertura{
+			margin-top: -38px;
+			margin-left: 20px;
+			width: 117px;
+			height: 133px
+		}
+
+		#principal-rich-media{
+			min-height: 508px;
+			min-width: 800px;
+		}
+
+		#item1-qmi, #item2-qmi, #item3-qmi, #item4-qmi, #item5-qmi, #item6-qmi, #item7-qmi, #item8-qmi, #item9-qmi, #item10-qmi{
+			padding-top: 105px;
+		}
+		#item1-qmi p, #item2-qmi p, #item3-qmi p, #item4-qmi p, #item5-qmi p, #item6-qmi p, #item7-qmi p, #item8-qmi p{
+			font-size: 12px !important;
+		}
+		#titulo-vinho-esquerda{			
+			padding: 14px;
+			background: #7a2738;
+			margin-top: -5px;
+			display: inline-block;
+			width: 270px;
+			margin-left: -30px;
+		}
+
+		#titulo-vinho-direita{			
+			padding: 14px;
+			background: #7a2738;
+			margin-top: -5px;
+			display: inline-block;
+			width: 280px;
+			margin-left: -35px;
+		}
+
+		#seta-quinta-maria-izabel{
+			position: absolute;
+			text-align: center;
+			right: 50px;
+			bottom: 25px;
+		}
+
+		p#texto-form-qmi {
+			color: #eca45c;
+			width: 550px;
+			margin: 0 auto;
+			font-size: 16px;
+		}
+
+		div#form-contato-qmi {
+			max-width: 500px;
+			margin: 10px auto;
+		}
+
+		div#form-contato-qmi input, div#form-contato-qmi button{
+			height: 45px;
+			border-radius: 130px;
+			color: #7a2738;
+			font-family: helvetica !important;
+			font-size: 14px;
+		}
+
+		div#form-contato-qmi input::-webkit-input-placeholder{
+			color: #7a2738;
+			font-family: helvetica !important;
+			font-size: 14px;
+		}
+
+		#logo-agradecimento-qmi{
+			width: 200px;
+			margin: 0 auto;
+		}
+
+		#logo-agradecimento-qmi img{
+			width: 70%;
+		}
+
+		#texto-agradecimento-qmi{
+			margin: 20px auto;
+			width: 500px;
+			clear: both;
+			color: #7a2738;
+			text-align: center;
+			font-size: 32px;
+		}
+
+
+		#ridouro-submit{
+			width: 100%;
+			box-shadow: none;
+			border: none;
+			background: white;
+		}
+
+		div#alerta-form-qmi {
+			color: red;
+			background: rgba(255,255,255,0.8);
+			border-radius: 40px;
+			text-align: center;
+			padding: 8px;
+			box-shadow: 3px 3px 2px rgba(0,0,0,0.5);
+			font-size: 1em;
+		}
+
+	</style>
+</head>
+<body>
+	<div id="principal-rich-media">
+
+		<div id="total-rich-media">
+			<div id="richMedia-qmi" class="carousel slide center-block" data-ride="carousel"  data-interval="false">
+				<!-- Indicators -->
+				<ul class="helvetica" id="menu-carousel">
+					<li data-target="#richMedia-qmi" data-slide-to="0" class="active" id="btn1"><a href="#"> <img src="src/img/iconeMenu.png" width="90%" height="90%"> </a></li>
+					<li data-target="#richMedia-qmi" data-slide-to="1"><a href="#"> • VINHAS DA PRINCESA </a></li>
+					<li data-target="#richMedia-qmi" data-slide-to="2"><a href="#"> • QUINTA MARIA IZABEL </a></li>
+					<li data-target="#richMedia-qmi" data-slide-to="3"><a href="#"> • MARIA IZABEL </a></li>
+					<li data-target="#richMedia-qmi" data-slide-to="5"><a href="#"> • M.I. </a></li>
+					<li data-target="#richMedia-qmi" data-slide-to="6"><a href="#"> • ESPUMANTE </a></li>
+					<li data-target="#richMedia-qmi" data-slide-to="7"><a href="#"> • PORTO </a></li>
+					<li data-target="#richMedia-qmi" data-slide-to="8"><a href="#"> • POETA </a></li>
+					<li data-target="#richMedia-qmi" data-slide-to="10" id="agradecimento-qmi" style="display: none;"><a href="#"> • POETA </a></li>
+				</ul>
+
+				<!-- Wrapper for slides -->				
+				<div class="carousel-inner">
+
+					<!-- Slide 0  -  ABERTURA DO RICH MEDIA -->
+					<div class="item active" id="item0-qmi" class="container">
+						<div class="row" id="textos-abertura">
+							<div class="col-lg-offset-4 col-xs-offset-4 col-sm-offset-4 col-md-offset-4 col-lg-4 col-xs-4 col-sm-4 col-md-4">							
+								<div class="text-center" id="texto-abertura">
+									<img src="src/img/textoAbertura.png" alt="texto QMI"/>
+								</div>								
+							</div>
+							<div class="col-lg-4 col-xs-4 col-sm-4 col-md-4">							
+								<div class="text-left" id="logo-abertura">
+									<img src="src/img/logo-qmi.png" alt="Logo QMI"/>
+								</div>								
+							</div>
+						</div>
+						<div class="row">							
+							<div class="text-center" id="imagem-vinhos">
+								<img src="src/img/vinhos-abertura.png" alt="vinhos QMI"/>
+							</div>
+						</div>
+						<div id="btn-comprar">
+							<a href="#" title="Comprar QMI" data-target="#richMedia-qmi" data-slide-to="9" class="btn">
+								CLIQUE E COMPRE COM DESCONTOS ESPECIAIS
+							</a>
+						</div>
+					</div>
+
+					<!-- Slide 1 -->
+					<div class="item container" id="item1-qmi">						
+						<div class="row">
+							<div class="col-lg-2 col-xs-2 col-sm-2 col-md-2 text-center">
+								<img src="src/img/vinhas-princesa-tinto.png" alt="Vinhas Princesa Tinto" class="center-block">
+							</div>
+							<div class="col-lg-4 col-xs-4 col-sm-4 col-md-4">
+								
+								<h2 class="titulos-vinhos" id="titulo-vinho-esquerda">•Vinhas da Princesa Tinto</h2>
+								
+								<h4 class="titulos-vinhos">Castas:</h4> 
+								<p class="helvetica" style="color: white;">Mistura de castas tintas regionais</p>
+
+								<h4 class="titulos-vinhos">Notas de Prova:</h4> 
+								<p class="helvetica" style="color: white;">Vinho de cor rubi violeta profunda, aromas complexos rústicos, notas florais frescas. Boca potente, taninos maduros, acidez elevada, caráter profundamente Douro. Vinho de grande guarda.</p>
+
+								<h4 class="titulos-vinhos">Litragem:</h4>
+								<p class="helvetica" style="color: white;">750 ml, 1,5 ml.</p>
+							</div>
+							<div class="col-lg-2 col-xs-2 col-sm-2 col-md-2 text-center">
+								<img src="src/img/vinhas-princesa-branca.png" alt="Vinhas Princesa Branco" class="pull-left">
+							</div>
+							<div class="col-lg-4 col-xs-4 col-sm-4 col-md-4">
+
+								<h2 class="titulos-vinhos" id="titulo-vinho-direita">•Vinhas da Princesa Branco</h2>
+
+								<h4 class="titulos-vinhos">Castas:</h4> 
+								<p class="helvetica" style="color: white;">Rabigato, Códega, Donzelinho, Viosinho, Arinto e outras.</p>
+
+								<h4 class="titulos-vinhos">Notas de Prova:</h4> 
+								<p class="helvetica" style="color: white;">
+									Cor citrina, aroma fino e sutil. Forte caráter mineral, fresco e com notas de fruto de caroço, raspa de laranja confitada, aroma de pastelaria e fumo. De elevada estrutura na boca, volumoso e mineral. Acidez natural que o faz fresco e elegante. Final muito longo.</p>
+
+									<h4 class="titulos-vinhos">Litragem:</h4>
+									<p class="helvetica" style="color: white;">750 ml, 1,5 ml, 3 L.</p>
+								</div>
+							</div>
+							<div id="btn-comprar">
+								<a href="#" title="Comprar QMI" data-target="#richMedia-qmi" data-slide-to="9" class="btn">
+									CLIQUE E COMPRE COM DESCONTOS ESPECIAIS
+								</a>
+							</div>
+						</div>
+
+						<!-- Slide 2 -->
+						<div class="item container" id="item2-qmi">
+							<div class="row">
+								<div class="col-lg-2 col-xs-2 col-sm-2 col-md-2 text-center">
+									<img src="src/img/quinta-maria-izabel-tinto.png" alt="Quinta Maria Izabel Tinto" class="center-block">
+								</div>
+								<div class="col-lg-4 col-xs-4 col-sm-4 col-md-4">
+
+									<h2 class="titulos-vinhos" id="titulo-vinho-esquerda">•Quinta Maria Izabel Tinto</h2>
+
+									<h4 class="titulos-vinhos">Castas:</h4> 
+									<p class="helvetica" style="color: white;">Touriga Francesa, Touriga Nacional, Tinta Roriz Tinto Cão, Tinta Amarela e Tinta Francisca.</p>
+
+									<h4 class="titulos-vinhos">Notas de Prova:</h4> 
+									<p class="helvetica" style="color: white;">Equilibra concentração, complexidade e elegância de forma única. Elaborado para ser consumido jovem, mas possui um grande potencial de envelhecimento.</p>
+
+									<h4 class="titulos-vinhos">Litragem:</h4>
+									<p class="helvetica" style="color: white;">375 ml, 750 ml, 1,5 ml, 3 L, 5 L, 9 L.</p>
+								</div>
+								<div class="col-lg-2 col-xs-2 col-sm-2 col-md-2 text-center">
+									<img src="src/img/quinta-maria-izabel-branco.png" alt="Vinhas Princesa Branco" class="pull-left">
+								</div>
+								<div class="col-lg-4 col-xs-4 col-sm-4 col-md-4">
+
+									<h2 class="titulos-vinhos" id="titulo-vinho-direita">•Quinta Maria Izabel Branco</h2>
+
+									<h4 class="titulos-vinhos">Castas:</h4> 
+									<p class="helvetica" style="color: white;">Rabigato, Códega, Viosinho e Arinto</p>
+
+									<h4 class="titulos-vinhos">Notas de Prova:</h4> 
+									<p class="helvetica" style="color: white;">
+										É um vinho onde a fruta, complexidade, elegância e frescor se equilibram de uma forma singular, originando um excelente branco de 2015. Elaborado para ser consumido jovem, tendo um potencial de guarda notório.</p>
+
+										<h4 class="titulos-vinhos">Litragem:</h4>
+										<p class="helvetica" style="color: white;">375 ml, 750 ml, 1,5 ml.</p>
+									</div>
+								</div>
+								<div id="btn-comprar">
+									<a href="#" title="Comprar QMI" data-target="#richMedia-qmi" data-slide-to="9" class="btn">
+										CLIQUE E COMPRE COM DESCONTOS ESPECIAIS
+									</a>
+								</div>
+							</div>
+
+							<!-- Slide 3 -->
+							<div class="item container" id="item3-qmi">
+								<div class="row">
+									<div class="col-lg-2 col-xs-2 col-sm-2 col-md-2 text-center">
+										<img src="src/img/maria-izabel-tinto.png" alt="Maria Izabel Tinto" class="center-block">
+									</div>
+									<div class="col-lg-4 col-xs-4 col-sm-4 col-md-4">
+
+										<h2 class="titulos-vinhos" id="titulo-vinho-esquerda">•Maria Izabel Tinto</h2>
+
+										<h4 class="titulos-vinhos">Castas:</h4> 
+										<p class="helvetica" style="color: white;">Touriga Nacional, Touriga Franca, Tinta Roriz e Tinta Francisca.</p>
+
+										<h4 class="titulos-vinhos">Notas de Prova:</h4> 
+										<p class="helvetica" style="color: white;">Possui fruta fresca vermelha em 
+											grande plano. Complexidade e elegância oriundas do curto estágio em carvalho francês. Caráter apelativo, descomplicado e limpo. Textura sedosa, com taninos polidos.</p>
+
+											<h4 class="titulos-vinhos">Litragem:</h4>
+											<p class="helvetica" style="color: white;">375 ml, 750 ml, 1,5 ml.</p>
+										</div>
+										<div class="col-lg-2 col-xs-2 col-sm-2 col-md-2 text-center">
+											<img src="src/img/maria-izabel-branco.png" alt="Maria Izabel Branco" class="pull-left">
+										</div>
+										<div class="col-lg-4 col-xs-4 col-sm-4 col-md-4">
+
+											<h2 class="titulos-vinhos" id="titulo-vinho-direita">•Maria Izabel Branco</h2>
+
+											<h4 class="titulos-vinhos">Castas:</h4> 
+											<p class="helvetica" style="color: white;">Cerceal, Viosinho, Rabigato, Códego do Larinho, Arinto e Verdelho.</p>
+
+											<h4 class="titulos-vinhos">Notas de Prova:</h4> 
+											<p class="helvetica" style="color: white;">
+												Cor citrina definida. Apresenta aroma jovem. Tem um bom caráter mineral e fresco. Notas de fruto de caroço, citrinos, aroma de pastelaria e leve fumo. Franco na boca, volumoso, mineral e com acidez natural. Final médio e frutado.</p>
+
+												<h4 class="titulos-vinhos">Litragem:</h4>
+												<p class="helvetica" style="color: white;">375 ml, 750 ml, 1,5 ml.</p>
+											</div>
+										</div>
+										<div id="btn-comprar">
+											<a href="#" title="Comprar QMI" data-target="#richMedia-qmi" data-slide-to="9" class="btn">
+												CLIQUE E COMPRE COM DESCONTOS ESPECIAIS
+											</a>
+										</div>
+										<div id="seta-quinta-maria-izabel">
+											<a href="#" title="#" data-target="#richMedia-qmi" data-slide-to="4" class="btn">
+												<img src="src/img/seta-maria.png" alt="Voltar Ir">
+											</a>
+										</div>
+									</div>
+
+									<!-- Slide 4 -->
+									<div class="item container" id="item4-qmi">
+										<div class="row">
+											<div class="col-lg-2 col-xs-2 col-sm-2 col-md-2  text-center">
+												<img src="src/img/maria-izabel-rose.png" alt="Maria Izabel Rosé" class="center-block">
+											</div>
+											<div class="col-lg-4 col-xs-4 col-sm-4 col-md-4">
+
+												<h2 class="titulos-vinhos" id="titulo-vinho-esquerda">•Maria Izabel Rosé</h2>
+
+												<h4 class="titulos-vinhos">Castas:</h4> 
+												<p class="helvetica" style="color: white;">Touriga Nacional, Touriga Franca, Tinta Roriz e Tinta Francisca.</p>
+
+												<h4 class="titulos-vinhos">Notas de Prova:</h4> 
+												<p class="helvetica" style="color: white;">Possui fruta fresca vermelha em 
+													grande plano. Complexidade e elegância oriundas do curto estágio em carvalho francês. Caráter apelativo, descomplicado e limpo. Textura sedosa, com taninos polidos.</p>
+
+													<h4 class="titulos-vinhos">Litragem:</h4>
+													<p class="helvetica" style="color: white;">375 ml, 750 ml, 1,5 ml.</p>
+												</div>
+											</div>
+											<div id="btn-comprar">
+												<a href="#" title="Comprar QMI" data-target="#richMedia-qmi" data-slide-to="9" class="btn">
+													CLIQUE E COMPRE COM DESCONTOS ESPECIAIS
+												</a>
+											</div>
+											<div id="seta-quinta-maria-izabel">
+												<a href="#" title="#" data-target="#richMedia-qmi" data-slide-to="3" class="btn">
+													<img src="src/img/seta-maria-voltar.png" alt="Voltar Seta">
+												</a>
+											</div>
+										</div>
+
+										<!-- Slide 5 -->
+										<div class="item container" id="item5-qmi">
+											<div class="row">
+												<div class="col-lg-2 col-xs-2 col-sm-2 col-md-2  text-center">
+													<img src="src/img/mi-tinto.png" alt="M.I. Tinto" class="center-block">
+												</div>
+												<div class="col-lg-4 col-xs-4 col-sm-4 col-md-4">
+
+													<h2 class="titulos-vinhos" id="titulo-vinho-esquerda">•M.I.Tinto</h2>
+
+													<h4 class="titulos-vinhos">Castas:</h4> 
+													<p class="helvetica" style="color: white;">Touriga Franca, Touriga Nacional, Tinta Roriz e Tinta Amarela.</p>
+
+													<h4 class="titulos-vinhos">Notas de Prova:</h4> 
+													<p class="helvetica" style="color: white;">Cor vermelha média. Expressivo no aroma com nuances florais, frutos silvestres e perfil balsâmico fresco. Caráter mineral com elegância no palato. De grande equilíbrio, elegância e  estilo simples.</p>
+
+													<h4 class="titulos-vinhos">Litragem:</h4>
+													<p class="helvetica" style="color: white;">750 ml.</p>
+												</div>
+												<div class="col-lg-2 col-xs-2 col-sm-2 col-md-2 text-center">
+													<img src="src/img/mi-branco.png" alt="M.I. Branco" class="pull-left">
+												</div>
+												<div class="col-lg-4 col-xs-4 col-sm-4 col-md-4">
+
+													<h2 class="titulos-vinhos" id="titulo-vinho-direita">•M.I.Branco</h2>
+
+													<h4 class="titulos-vinhos">Castas:</h4> 
+													<p class="helvetica" style="color: white;">Rabigato, Códega do Larinho, Gouveio, Dona Branca, Viosinho, Bical e outras.</p>
+
+													<h4 class="titulos-vinhos">Notas de Prova:</h4> 
+													<p class="helvetica" style="color: white;">
+														Aroma fresco, delicado e marcadamente mineral. Boas notas de fruta fresca, citrinos e alguma fruta exótica. Envolvente, refrescante e muito elegante na boca com uma boa acidez. Seu final deixa boas notas cítricas e minerais. Perfeito para as mais diversas ocasiões.</p>
+
+														<h4 class="titulos-vinhos">Litragem:</h4>
+														<p class="helvetica" style="color: white;">750 ml.</p>
+													</div>
+												</div>
+												<div id="btn-comprar">
+													<a href="#" title="Comprar QMI" data-target="#richMedia-qmi" data-slide-to="9" class="btn">
+														CLIQUE E COMPRE COM DESCONTOS ESPECIAIS
+													</a>
+												</div>
+											</div>
+
+											<!-- Slide 6 -->
+											<div class="item container" id="item6-qmi">
+												<div class="row">
+													<div class="col-lg-2 col-xs-2 col-sm-2 col-md-2 text-center">
+														<img src="src/img/espumante-maria-izabel.png" alt="Espumante Maria Izabel" class="center-block">
+													</div>
+													<div class="col-lg-4 col-xs-4 col-sm-4 col-md-4">
+
+														<h2 class="titulos-vinhos" id="titulo-vinho-esquerda">•Espumante Maria Izabel</h2>
+
+														<h4 class="titulos-vinhos">Castas:</h4> 
+														<p class="helvetica" style="color: white;">Sousão e Tinta Roriz.</p>
+
+														<h4 class="titulos-vinhos">Notas de Prova:</h4> 
+														<p class="helvetica" style="color: white;">Nariz voluptuoso com uma fruta excelente, mas também com muitas especiarias, sobressaindo a pimenta. No palato, mostra-se fresco, elegante e de grande estrutura. Taninos finos e com grande concentração. Possui um final muito longo.</p>
+
+														<h4 class="titulos-vinhos">Litragem:</h4>
+														<p class="helvetica" style="color: white;">750 ml.</p>
+													</div>
+													<div class="col-lg-2 col-xs-2 col-sm-2 col-md-2 text-center">
+														<img src="src/img/espumante-maria-izabel-rose.png" alt="Espumante Maria Izabel Rosé" class="pull-left">
+													</div>
+													<div class="col-lg-4 col-xs-4 col-sm-4 col-md-4">
+
+														<h2 class="titulos-vinhos" id="titulo-vinho-direita">•Espumante Maria Izabel Rosé</h2>
+
+														<h4 class="titulos-vinhos">Castas:</h4> 
+														<p class="helvetica" style="color: white;">Castas tradicionais tintas.</p>
+
+														<h4 class="titulos-vinhos">Notas de Prova:</h4> 
+														<p class="helvetica" style="color: white;">
+															Este espumante atrai pela sua côr salmão aberto, aromas delicados, frescos, a pastelaria fina, floral e levemente frutado. Cremoso e intenso em boca com acidez citrica e algo mineral.</p>
+
+															<h4 class="titulos-vinhos">Litragem:</h4>
+															<p class="helvetica" style="color: white;">750 ml.</p>
+														</div>
+													</div>
+													<div id="btn-comprar">
+														<a href="#" title="Comprar QMI" data-target="#richMedia-qmi" data-slide-to="9" class="btn">
+															CLIQUE E COMPRE COM DESCONTOS ESPECIAIS
+														</a>
+													</div>
+												</div>
+
+												<!-- Slide 7 -->
+												<div class="item" id="item7-qmi">
+													<div class="row">
+														<div class="col-lg-2 col-xs-2 col-sm-2 col-md-2 text-center">
+															<img src="src/img/porto-qmi.png" alt="Porto Vintage Port" class="center-block">
+														</div>
+														<div class="col-lg-4 col-xs-4 col-sm-4 col-md-4">
+
+															<h2 class="titulos-vinhos" id="titulo-vinho-esquerda">•Porto Vintage Port</h2>
+
+															<h4 class="titulos-vinhos">Castas:</h4> 
+															<p class="helvetica" style="color: white;">Sousão e Tinta Roriz.</p>
+
+															<h4 class="titulos-vinhos">Notas de Prova:</h4> 
+															<p class="helvetica" style="color: white;">Nariz voluptuoso com uma fruta excelente, mas também com muitas especiarias, sobressaindo a pimenta. No palato, mostra-se fresco, elegante e de grande estrutura. Taninos finos e com grande concentração. Possui um final muito longo.</p>
+
+															<h4 class="titulos-vinhos">Litragem:</h4>
+															<p class="helvetica" style="color: white;">375 ml, 750 ml.</p>
+														</div>
+													</div>
+													<div id="btn-comprar">
+														<a href="#" title="Comprar QMI" data-target="#richMedia-qmi" data-slide-to="9" class="btn">
+															CLIQUE E COMPRE COM DESCONTOS ESPECIAIS
+														</a>
+													</div>
+												</div>
+
+												<!-- Slide 8 -->
+												<div class="item" id="item8-qmi">
+													<div class="row">
+														<div class="col-lg-2 col-xs-2 col-sm-2 col-md-2 text-center">
+															<img src="src/img/poeta-qmi.png" alt="Vinho do Poeta" class="center-block">
+														</div>
+														<div class="col-lg-4 col-xs-4 col-sm-4 col-md-4">
+
+															<h2 class="titulos-vinhos" id="titulo-vinho-esquerda">•Vinho do Poeta</h2>
+
+															<h4 class="titulos-vinhos">Castas:</h4> 
+															<p class="helvetica" style="color: white;">Tradicionais Portuguesas.</p>
+
+															<h4 class="titulos-vinhos">Notas de Prova:</h4> 
+															<p class="helvetica" style="color: white;">Aroma de frutos pretos e aromas da Índia, fundido na boca com vigor e seda no palato.</p>
+
+															<h4 class="titulos-vinhos">Litragem:</h4>
+															<p class="helvetica" style="color: white;">750 ml.</p>
+														</div>
+													</div>
+													<div id="btn-comprar">
+														<a href="#" title="Comprar QMI" data-target="#richMedia-qmi" data-slide-to="9" class="btn">
+															CLIQUE E COMPRE COM DESCONTOS ESPECIAIS
+														</a>
+													</div>
+												</div>
+
+												<!-- Slide 9  -  FORMULÁRIO DE CADASTRO -->
+												<div class="item" id="item9-qmi">
+													<p class="trajan text-center" id="texto-form-qmi">
+														Para comprar os vinhos da Quinta Maria Izabel com descontos especiais, preencha o formulário abaixo que um consultor entrará em contato com todas as informações: 
+													</p>
+													<div id="form-contato-qmi">
+														<form action="" method="post" accept-charset="utf-8" id="contato-rm">
+														<div class="form-group hidden" id="alerta-form-qmi">
+																<i class="glyphicon glyphicon-alert"></i>&nbsp;&nbsp;&nbsp;<label>Preencha todos os campos corretamente!</label>
+															</div>
+															<div class="form-group">
+																<input type="text" name="nome-qmi" id="nome-qmi" value="" placeholder="NOME" class="form-control" required="true">
+															</div>
+															<div class="form-group">
+																<input type="email" name="email-qmi" id="email-qmi" value="" placeholder="E-MAIL" class="form-control" required="true">
+															</div>
+															<div class="form-group">
+																<input type="tel" name="fone-qmi" id="fone-qmi" value="" placeholder="CELULAR" class="form-control" maxlength="15" required="true">
+															</div>
+															<div class="form-group">
+																<button type="submit" name="submit" id="ridouro-submit" id="ridouro-submit" data-submit="...Sending">RECEBA A PROPOSTA</button>
+															</div>
+														</form>
+													</div>
+												</div>
+
+												<!-- Slide 10  -  AGRADECIMENTO PELO CADASTRO -->
+												<div class="item" id="item10-qmi">
+													<div id="logo-agradecimento-qmi">
+														<img src="src/img/logo-qmi.png" alt="logo QMI" />
+													</div>
+													<div id="texto-agradecimento-qmi">
+														<p class="trajan">
+															Obrigado!<br>
+															Aguarde o nosso contato!
+														</p>
+													</div>
+												</div>
+											</div>
+
+										</div>		
+									</div>
+
+								</div>
+
+								<!-- JavaSript -->
+								<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+								<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+								<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.10/jquery.mask.min.js" type="text/javascript"></script>
+								<script type="text/javascript">
+									var enviar = false;
+									var form = document.querySelector('#contato-rm');
+									var btnEnviar = $('#ridouro-submit');
+									var agradecimento = $('#agradecimento-qmi');
+									var primeiraPg = $('#btn1');
+
+									var nome = $('#nome-qmi');
+									var email = $('#email-qmi');
+									var fone = $('#fone-qmi');
+
+									var erro = $('#alerta-form-qmi');
+
+									$(function(){										
+										$('input[name="fone-qmi"]').mask('(00)00000-0000');
+									});
+
+									function valida(){
+
+										if(nome.val() != ""){
+											if(email.val() != ""){
+												if(fone.val() != ""){
+													enviar = true;
+													erro.addClass('hidden');
+													console.log('entrou');
+												}
+											}
+
+										}else{
+											erro.removeClass('hidden');
+											enviar = false;
+										}
+									}
+
+									btnEnviar.click(function(){	
+										valida();							
+										if(enviar == true){
+
+
+											agradecimento.click();
+											$.post('contato.php',
+												$('#contato-rm').serialize(),
+												function(res){
+													form.reset();
+													
+													window.setTimeout(function(){
+														primeiraPg.click();
+													},3000);
+
+												}
+												);
+
+											enviar = false;
+										}
+										return false;
+
+									});
+
+									if(enviar == true){
+										agradecimento.click();
+										$.post('contato.php',
+											$('#contato-rm').serialize(),
+											function(res){
+												form.reset();
+												agradecimento.click();
+												window.setTimeout(function(){
+													primeiraPg.click();
+												},3000);
+
+											}
+											);
+
+
+									} 
+
+
+								</script>
+							</body>
+							</html>
